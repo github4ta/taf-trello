@@ -44,7 +44,7 @@ public class LoginNegativeTest extends BaseTest {
 
         loginStep.logIn(user);
 
-        Assert.assertEquals(loginStep.loginIncorrectPasswordMessage(), expectedIncorrectPasswordMessage,"Password must not contains @");
+        Assert.assertEquals(loginStep.loginIncorrectPasswordMessage(), expectedIncorrectPasswordMessage,"Password mustn't contains @");
 
     }
 }

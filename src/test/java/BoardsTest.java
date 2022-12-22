@@ -54,7 +54,7 @@ public class BoardsTest extends BaseTest {
 
         userPageStep.refactorCardOnBoard(comment);
         Assert.assertEquals(userPageStep.getCommentFromCard(), comment,"Actual and expected description card are not the same"); // getCommentFromCard() иногда выбрасывает stale element , т.к. страница не успевает загрузится, ожидалка есть
-        //закрыть карточку, иначе доска не удалится @AfterMethod
+        //закрыть карточку, иначе доска не удалится при @AfterMethod
         userPageStep.closeCardAfterRefactor();
 
     }

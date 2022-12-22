@@ -77,6 +77,5 @@ public class LoginPage extends BasePage {
         Waiters.waitForVisibilityOfElement(userName);
         return userName.getAttribute("title");
     }
-
 }
 

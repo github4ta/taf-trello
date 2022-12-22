@@ -28,19 +28,4 @@ public class RandomData {
                 .get();
         return randomNumber;
     }
-
-    public static String generateRandomStringLettersAndNumbersWithSymbols() {
-        String someString = mock.strings()
-                .size(8)
-                .get();
-        return (someString + "@" + generateNumbers());
-    }
-
-    public static String generateNumbersWithSymbols() {
-        String randomNumber = mock.strings()
-                .size(8)
-                .type(StringType.NUMBERS)
-                .get();
-        return (randomNumber + "@" + generateRandomStringLetters());
-    }
 }

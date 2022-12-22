@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 @Log4j2
-
 public class BasePage {
     protected WebDriver driver;
 

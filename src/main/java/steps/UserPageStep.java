@@ -20,7 +20,6 @@ public class UserPageStep extends UserPage {
 
     public void refactorCardOnBoard(String comment){
         userPage.clickExistentCard()
-//                .changeCard()
                 .addCommentOnCard(comment)
                 .clickSaveComment()
                 .closeCard();

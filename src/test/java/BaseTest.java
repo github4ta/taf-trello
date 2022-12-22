@@ -7,7 +7,6 @@ public class BaseTest {
     public void openPage(){
         Driver.navigateMainPage();
     }
-
     @AfterMethod
     public void closeWebDriver(){
         Driver.closeDriver();

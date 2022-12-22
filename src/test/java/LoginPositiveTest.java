@@ -10,10 +10,10 @@ public class LoginPositiveTest extends BaseTest {
 
     @Test
     void testLogin() {
-        String expectedUser = "Anastasiya (oanastasia058)";
+        String expectedDataUser = "Anastasiya (oanastasia058)";
 
         log.info("Test login");
         loginStep.logIn(new User());
-        Assert.assertEquals(loginStep.getActualUserDate(),expectedUser,"User's data does not match the data entered during login");
+        Assert.assertEquals(loginStep.getActualUserDate(),expectedDataUser,"User's data does not match the data entered during login");
     }
 }

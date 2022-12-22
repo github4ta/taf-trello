@@ -21,8 +21,7 @@ public class UserPage extends BasePage {
     private WebElement labelCardTitle;
     @FindBy(xpath = "//input[@value='Add card']")
     private WebElement addCardBtn;
-    @FindBy(xpath = "//div[@class ='list-card-details js-card-details']")
-    //находит 1 элт только с полным название класса
+    @FindBy(xpath = "//div[@class ='list-card-details js-card-details']") //находит 1 элт только с полным название класса
     private WebElement cardDetailsBtn;
     @FindBy(xpath = "//div[@class='description-edit edit']//textarea[@placeholder='Add a more detailed description…']")
     private WebElement fieldCardDescription;

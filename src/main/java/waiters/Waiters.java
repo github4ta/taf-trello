@@ -12,10 +12,10 @@ import java.time.Duration;
 
 @Log4j2
 public class Waiters {
-    public static final int WAIT_TIMEOUT_SECONDS = 10;
+    public static final int WAIT_TIMEOUT_SECONDS = 5;
 
     public static void waitForLoad() {
-        WebDriverWait wait = new WebDriverWait(Driver.getInstance(), Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(Driver.getInstance(), Duration.ofSeconds(8));
         wait.until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
         log.info("page is load");
     }

@@ -27,10 +27,6 @@ public class Driver {
         getInstance().navigate().to(BASE_URL);
     }
 
-    public static void refresh() {
-        driver.navigate().refresh();
-    }
-
     public static void closeDriver() {
         driver.quit();
         driver = null;
