@@ -16,7 +16,7 @@ public class Driver {
     public static WebDriver getInstance() {
         if (driver == null) {
             ChromeOptions opt = new ChromeOptions();
-            opt.addArguments("−−lang=en-EN");
+            opt.addArguments("−−lang=en-US");
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(opt);
             driver.manage().window().maximize();
