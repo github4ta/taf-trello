@@ -3,6 +3,7 @@ package driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Driver {
     private static WebDriver driver;
@@ -14,8 +15,10 @@ public class Driver {
 
     public static WebDriver getInstance() {
         if (driver == null) {
+            ChromeOptions opt = new ChromeOptions();
+            opt.addArguments("−−lang=en-EN");
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(opt);
             driver.manage().window().maximize();
 //            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT)); // это здесь надо?
         }
